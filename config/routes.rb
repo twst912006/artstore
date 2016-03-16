@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :items, controller: "cart_items"
     resources :orders do
     member do
       get :pay_with_credit_card
