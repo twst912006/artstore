@@ -12,6 +12,9 @@ Rails.application.routes.draw do
       delete :clean
     end
   end
+   namespace :account do
+   resources :orders
+ end
   devise_for :users
   namespace :admin do
    resources :products
